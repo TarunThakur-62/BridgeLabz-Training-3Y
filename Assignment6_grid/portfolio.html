@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Personal Portfolio</title>
+<style>
+*{box-sizing:border-box}body{margin:0;font-family:Arial,sans-serif;min-height:100vh;display:flex;flex-direction:column}
+header{display:flex;justify-content:space-between;align-items:center;padding:20px 8%;background:#172554;color:white}
+nav{display:flex;gap:20px}nav a{color:white;text-decoration:none}
+main{flex:1;display:flex;align-items:center;justify-content:center;gap:50px;padding:50px 8%}
+.about,.image{flex:1;display:flex;align-items:center;justify-content:center;text-align:center}.about{flex-direction:column}
+.image img{max-width:300px;width:100%;border-radius:12px}footer{text-align:center;padding:15px;background:#e5e7eb}
+@media(max-width:700px){header,main{flex-direction:column}nav{flex-wrap:wrap;justify-content:center}}
+</style>
+</head>
+<body>
+<header><h1>Tarun Thakur</h1><nav><a href="#">Home</a><a href="#">About</a><a href="#">Projects</a><a href="#">Contact</a></nav></header>
+<main><section class="about"><h2>About Me</h2><p>I am a B.Tech Computer Science student specializing in Cybersecurity. I enjoy programming, networking and ethical hacking.</p></section><section class="image"><img src="https://via.placeholder.com/300" alt="Profile"></section></main>
+<footer>&copy; 2026 Tarun Thakur</footer>
+</body>
+</html>

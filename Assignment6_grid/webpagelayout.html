@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0"><title>Responsive Webpage</title>
+<style>
+*{box-sizing:border-box}
+body{margin:0;min-height:100vh;display:flex;flex-direction:column;font-family:Arial;background:#f8fafc}
+header{display:flex;justify-content:space-between;align-items:center;padding:20px 7%;background:#172554;color:white}
+nav{display:flex;gap:20px;flex-wrap:wrap}
+nav a{color:white;text-decoration:none}
+main{flex:1;display:grid;grid-template-columns:2fr 1fr;gap:25px;padding:35px 7%}
+article,aside{background:white;padding:25px;border-radius:12px;box-shadow:0 3px 10px #ccc}
+.boxes{display:flex;gap:15px}
+.boxes div{flex:1;padding:25px 10px;text-align:center;background:#dbeafe;border-radius:8px}
+.title{animation:up 1s ease}@keyframes up{from{opacity:0;transform:translateY(25px)}to{opacity:1;transform:translateY(0)}}
+footer{padding:18px;text-align:center;background:#e5e7eb}
+@media(max-width:700px){header{flex-direction:column;gap:15px}
+main{grid-template-columns:1fr}
+.boxes{flex-direction:column}}
+</style></head>
+<body><header>
+    <h1>TechZone</h1><nav>
+        <a href="#">Home</a><a href="#">Articles</a>
+        <a href="#">Projects</a><a href="#">Contact</a></nav></header>
+<main><article>
+    <h2 class="title">Welcome to TechZone</h2>
+    <div class="boxes"><div>HTML</div><div>CSS</div>
+    <div>Cybersecurity</div></div><p>Explore technology, web development and cybersecurity topics.</p></article>
+<aside><h2>Sidebar</h2><p>Latest updates and useful links.</p>
+</aside></main><footer>&copy; 2026 TechZone</footer>
+</body></html>
