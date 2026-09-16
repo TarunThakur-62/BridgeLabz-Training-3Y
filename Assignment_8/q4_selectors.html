@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Selectors Practice</title>
+
+    <style>
+        p {
+            line-height: 1.6;
+        }
+
+        .highlight {
+            background: #fef3c7;
+            padding: 5px;
+        }
+
+        #special {
+            color: #b91c1c;
+            font-weight: bold;
+        }
+
+        a[target="_blank"] {
+            color: #2563eb;
+        }
+
+        section p {
+            font-style: italic;
+        }
+
+        ul > li {
+            margin: 7px 0;
+        }
+
+        h2 + p {
+            color: #475569;
+        }
+
+        h2 ~ p {
+            padding-left: 10px;
+        }
+
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #f1f5f9;
+            color: #172033;
+        }
+
+        header,
+        footer {
+            text-align: center;
+            background: #172033;
+            color: white;
+            padding: 20px;
+        }
+
+        main {
+            max-width: 800px;
+            margin: auto;
+            padding: 30px;
+        }
+
+        .box {
+            background: white;
+            padding: 25px;
+            border-radius: 12px;
+            box-shadow: 0 5px 15px #0002;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>CSS Selectors Practice</h1>
+    </header>
+    <main>
+        <section class="box">
+            <h2>Selector Examples</h2>
+            <p>This paragraph demonstrates an element selector.</p>
+            <p class="highlight">This uses a class selector.</p>
+            <p id="special">This uses an ID selector.</p>
+            <a href="#" target="_blank">Attribute selector link</a>
+            <h2>Combinators</h2>
+            <ul>
+                <li>Child selector</li>
+                <li>Another child</li>
+            </ul>
+            <p>Adjacent sibling example.</p>
+            <p>General sibling example.</p>
+        </section>
+    </main>
+</body>
+</html>
